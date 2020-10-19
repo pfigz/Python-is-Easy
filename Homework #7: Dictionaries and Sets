@@ -18,7 +18,7 @@ for element in song_info:
 key = input("Name an attribute or credential of my favorite song\n"))
 value = input("Guess a value for this credential or attribute\n"))
 
-def guess():
+def guess(key, value):
     if key in song_info and value in song_info[key]:
         return True
     else:
